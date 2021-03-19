@@ -33,13 +33,13 @@ Citizen.CreateThread(function()
 						else
 							if not IsPedInAnyVehicle(player, false) then
 								if Config.Animation then
-									RequestAnimDict("timetable@jimmy@doorknock@")
-									while not HasAnimDictLoaded("timetable@jimmy@doorknock@") do
+									RequestAnimDict("anim@heists@keycard@")
+									while not HasAnimDictLoaded("anim@heists@keycard@") do
 									Citizen.Wait(1000)
 									end
 										
 									Citizen.Wait(200)
-									TaskPlayAnim(player,"timetable@jimmy@doorknock@","knockdoor_idle",1.0, 1.0, 3000, 9, 1.0, 0, 0, 0)
+									TaskPlayAnim(player,"anim@heists@keycard@","keycard_idle",1.0, 1.0, 3000, 9, 1.0, 0, 0, 0)
 									Citizen.Wait(3000)
 								end
 								if Config.Blackout then
