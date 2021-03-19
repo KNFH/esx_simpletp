@@ -39,7 +39,7 @@ Citizen.CreateThread(function()
 									end
 										
 									Citizen.Wait(200)
-									TaskPlayAnim(player,"anim@heists@keycard@","keycard_idle",1.0, 1.0, 3000, 9, 1.0, 0, 0, 0)
+									TaskPlayAnim(player,"anim@heists@keycard@","exit",1.0, 1.0, 3000, 9, 1.0, 0, 0, 0)
 									Citizen.Wait(3000)
 								end
 								if Config.Blackout then
